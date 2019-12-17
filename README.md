@@ -16,9 +16,12 @@ Let us consider a drunk walker that moves along in a street (considered as a str
 **Diffusion in 2 dimensions: diffusion of a dye in water**
 
 In this part, we will simulate the diffusion of a dye drop in a water puddle. The water puddle is represented by a lattice of 20 lines and 20 columns. At the initial time step, box of the lattice is empty, except the four at the center which contains 100 particles of dye. At each time step, each molecule moves according to the following rules :
+
 (i) the molecule has a probability 𝑝 to stay in its box,
+
 (ii) if the molecule moves, it moves one box and all possible moving directions are
 equiprobable (e.g. 0.25 ∙ (1 − 𝑝) to go up, down, left or right if the particle is in the center of the lattice, 0.33 ∙ (1 − 𝑝) to go up, down or left if the particle in is a top-right box of a row, or 0.5 ∙ (1 − 𝑝) to go down or right if the particle is in the upper left corner box), and
+
 (iii) the molecule can not go out of the lattice.
  
 1. Write a function that computes the final position of each molecule walker as a function of the parameter 𝑝 and the number of steps 𝑁.
