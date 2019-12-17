@@ -1,8 +1,10 @@
 # Diffusion_Python
 Computer Sciences for Physics and Chemistry – Homework
 This exercise is about the modeling of the diffusion of particles in physics or chemistry. It is composed of two parts, one simulating the diffusion in one dimension and one in a plane.
+
 **First part**
 **Diffusion in 1 dimension: the drunk walker**
+
 Let us consider a drunk walker that moves along in a street (considered as a straight line). At each step, he has a probability 𝑝 to move forward and 1 − 𝑝 to move backward.
 1. Write a function that calculates the final position of the walker as a function of the parameter 𝑝 and the number of steps 𝑁.
 2. What is the expected final position for 𝑝 = 0.5? Check your guess by running your function 100 times for 1000 steps.
@@ -12,6 +14,7 @@ Let us consider a drunk walker that moves along in a street (considered as a str
 
 **Second part**
 **Diffusion in 2 dimensions: diffusion of a dye in water**
+
 In this part, we will simulate the diffusion of a dye drop in a water puddle. The water puddle is represented by a lattice of 20 lines and 20 columns. At the initial time step, box of the lattice is empty, except the four at the center which contains 100 particles of dye. At each time step, each molecule moves according to the following rules :
 (i) the molecule has a probability 𝑝 to stay in its box,
 (ii) if the molecule moves, it moves one box and all possible moving directions are
